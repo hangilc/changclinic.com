@@ -1,0 +1,100 @@
+/*
+Theme Name: Chang Clinic
+Author: Hangil Chang
+Description: Theme for changclinic.com
+Version: 1.0.0
+Requires at least: 5.9
+*/
+*     { margin:0; padding:0 }
+body  { font-family:Arial; font-size:16px; margin-top: 10px; margin-bottom: 10px; }
+a     { text-decoration:none; color:#039; }
+a:visited { color:#309; }
+figure.border table { border-collapse:collapse; }
+figure.border table th    { border:2px solid #ccc; padding:3px; background-color:#eee; }
+figure.border table td    { border:2px solid #ccc; padding:3px; }
+
+#page { text-align: left; margin-left: auto; margin-right: auto }
+#header { background-color:#036; }
+#header h1 a { color:white; font-size:26px; padding:10px; }
+#header p  { color:white; text-align:right; padding:10px; }
+#header p .phone { white-space: nowrap; }
+#main { color:#333; padding: 10px;}
+#main h1 { margin:10px 0; background-color:#ccc; color:#036; font-size:26px; 
+           padding:6px; }
+#main h2 { font-size:16px; font-weight:bold; color:#036; margin:10px 0; clear:both; }
+#main p  { margin:10px 0; line-height:24px; }
+#main #my-greeting { margin-bottom: 20px; }
+#main ul, #main ol { margin:10px 0 10px 20px; }
+#main ul.morespace li, #main ol.morespace li { line-height:24px; margin-bottom:6px; }
+#footer { clear:both; text-align:center; border-top:2px solid #ccc; padding-top:3px; }
+.refer-gmap, #clinic-map { width:320px;height:320px;margin-top:10px; }
+#main .morerightmargin { margin-right:20px; }
+.side-item { margin-top:10px; margin-bottom:10px; }
+.side-head { color:#036; font-weight:bold; margin:0; padding:0; 
+             background-color:#ccc; padding:3px; }
+.side-content { margin:0; padding:10px; background-color:#eaeaea; }
+.side-content ul { margin-left:20px; }
+
+#main h2.post-title { margin-bottom:0px; }
+#main h2.post-title a, #main h2.post-title a:visited { color:#036; }
+#main div.post-date { margin-top:0; margin-bottom:10px; color:#666; text-align: right; }
+
+.opening_announce_usual, .opening_announce_kyuushin, .opening_announce_holiday, .opening_announce_saturday  {
+	border:2px solid #ccc; padding:10px; margin:10px 0; clear:both; border-radius: 6px; }
+.page-date { font-size:smaller; text-align:right; margin-right:10px;  }
+
+.business-info, #dialogflow-query-wrapper {
+	border:2px solid #ccc; padding:10px; margin:10px 0; clear:both; border-radius: 6px;
+}
+
+#dialogflow-query-input {
+	margin-top: 6px;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	position: absolute;
+	display: none;
+	background-color: #FCF6CF;
+	min-width: 200px;
+	padding: 6px;
+	border: 2px solid #ccc;
+	margin-left: -120px;
+}
+
+.dropdown-item {
+	cursor: pointer;
+}
+
+.dropdown-item:hover {
+	font-weight: bold;
+	user-select: none;
+}
+
+@media only screen and (min-width: 730px) {
+	#page { width: 710px; }
+	#header { position: relative;}
+	#header #title-wrapper { width: 60%; height: 100%; position: absolute; float: left; 
+		display: flex; align-items: center;}
+	#header p span { display: block; }
+	#main { width:510px; float:left; padding:0 10px 0 0; margin-bottom:10px; }
+	#dialogflow-query-wrapper {
+		font-size: 80%;
+	}
+	#side { width:190px; float:right; }
+	#clinic-map { width: 425px; height: 350px; }
+	.refer-gmap { width:450px;height:400px;margin-top:10px; }
+	#footer { margin-top: 10px;}
+}
+
+.side-item .side-content .sidebar-refer-list-link-wrapper {
+	text-align: right;
+}
+
+.archive-refer-content {
+	margin: 0 0 0 20px;
+}
