@@ -12,6 +12,7 @@ a:visited { color:#309; }
 figure.border table { border-collapse:collapse; }
 figure.border table th    { border:2px solid #ccc; padding:3px; background-color:#eee; }
 figure.border table td    { border:2px solid #ccc; padding:3px; }
+figure.vaccine-prices td:nth-of-type(2) { text-align: right; }
 
 #page { text-align: left; margin-left: auto; margin-right: auto }
 #header { background-color:#036; }
