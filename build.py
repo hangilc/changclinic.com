@@ -12,6 +12,7 @@ for page_file in page_files:
     home = "./" if page_content["title"] == "index" else "../"
     page = site.render(
         title=page_content["title"], 
+        date=page_content["date"],
         home=home,
         content=page_content
         )
