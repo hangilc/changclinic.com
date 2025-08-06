@@ -2,6 +2,7 @@ from jinja2 import Environment, FileSystemLoader
 import glob
 import frontmatter
 import os
+from lib.rss import check_for_rss
 
 env = Environment(loader=FileSystemLoader('templates'))
 site = env.get_template('site.html')
@@ -9,6 +10,7 @@ site = env.get_template('site.html')
 page_files = glob.glob("templates/pages/*.html")
 for page_file in page_files:
     page_content = frontmatter.load(page_file)
+    check_for_rss(page_content)
     home = "./" if page_content["title"] == "index" else "../"
     page = site.render(
         title=page_content["title"], 
